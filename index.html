@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevSkills Quiz Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glow-orb glow-top"></div>
+    <div class="glow-orb glow-bottom"></div>
+
+    <main class="quiz-wrapper">
+        <header class="quiz-header">
+            <div class="badge-tag">Tech & AI Trivia</div>
+            <h1>Developer Knowledge Check</h1>
+            <p class="subtitle">Quick 5-question test on AI concepts, core tools, and engineering foundations.</p>
+        </header>
+
+        <section id="quiz" class="quiz-card">
+            <div class="progress-wrap">
+                <div class="progress-stats">
+                    <span id="question-progress">Question 1 of 5</span>
+                    <span id="score-tracker">Score: 0</span>
+                </div>
+                <div class="progress-track">
+                    <div id="progress-bar" class="progress-fill"></div>
+                </div>
+            </div>
+
+            <h2 id="question"></h2>
+
+            <div id="options" class="options-grid"></div>
+        </section>
+
+        <section id="result-box" class="result-card hidden">
+            <div class="result-icon-wrap" id="result-emoji">🎯</div>
+            <h2 id="result-heading">Assessment Complete</h2>
+            <p id="result"></p>
+            <button id="retry-btn" class="retry-button">Try Again</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
